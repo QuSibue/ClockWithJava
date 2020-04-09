@@ -29,7 +29,7 @@ public class ClockPanel extends JPanel {
 	}
 	public void paintComponent(Graphics g){
 		super.paintComponent(g);
-		Graphics2D g2d = (Graphics2D) g.create();
+		Graphics2D g2d = (Graphics2D) g.create(); //on cast notre g en Graphics2D pour pouvoir modifier les tailles des lignes (ligne 60)
 		
 		m_radiusWhiteCircle = (getWidth()/2)-40; //on prend un rayon qui va donner un cercle qui prend quasiment toute la fenetre
 		m_centerX = m_centerY = getWidth()/2; //dans le contexte actuel, la fenetre est carrée, donc qu'on prenne widh ou height c'est pareil (a separe en deux opération si on change)
