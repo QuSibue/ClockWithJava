@@ -88,7 +88,7 @@ public class ClockPanel extends JPanel {
 	public void updateHour() { //fonction qui permet de mettre a jour l'affichage
 		System.out.println(m_clock.getHour() + " : " + m_clock.getMinutes() + " : " + m_clock.getSeconds());
 		this.m_clock.increment(); //on met a jour notre horloge
-		this.repaint(); //on redessine l'horloge
+		this.repaint(); //on redessine l'horloge completement
 	}
 	
 	
